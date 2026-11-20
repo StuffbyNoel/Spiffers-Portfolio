@@ -47,16 +47,47 @@
                 SPIFFERS SHOES
             </h1>
             <div class="bg-[#151515] border border-[#2a2a2a] rounded px-4 py-1.5 text-gray-200 font-bebas tracking-widest text-lg md:text-2xl mt-2">
-                Product Animation
+                Product Animation &amp; Social Campaign
             </div>
         </div>
 
-        <!-- Main Media Placeholder (Product Commercial Video) -->
-        <div class="w-full max-w-5xl aspect-video bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm relative group overflow-hidden flex items-center justify-center">
-            <!-- Replace this <p> with a <video> or YouTube/Vimeo <iframe> when ready -->
-            <p class="font-bebas text-3xl md:text-4xl text-[#2a2a2a] tracking-widest text-center px-4 group-hover:scale-110 transition-transform duration-700">
-                FINAL PRODUCT ANIMATION / VIDEO EMBED
-            </p>
+        <!-- Main Vertical Ad Video Showcase (9:16 Reel / Short Format) -->
+        <!-- Rename your video file to 'Spiffers_Ad.mp4' or update the src below to match -->
+        <div class="w-full max-w-5xl flex flex-col items-center">
+            <div class="w-full max-w-[360px] sm:max-w-[400px] aspect-[9/16] bg-[#0a0a0a] border border-[#2a2a2a] hover:border-white/40 rounded-sm relative group overflow-hidden flex items-center justify-center shadow-2xl transition-colors duration-300">
+                <video
+                    id="spiffers-ad-video"
+                    src="./Spiffers.mp4"
+                    poster="./Spiffers1.jpg"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    class="w-full h-full object-cover"
+                ></video>
+
+                <!-- Label Badge -->
+                <span class="absolute top-3 left-3 bg-black/75 border border-white/15 backdrop-blur-sm px-2.5 py-0.5 rounded text-xs font-bebas tracking-widest text-gray-200 pointer-events-none">
+                    SOCIAL AD FILM &bull; 9:16
+                </span>
+
+                <!-- Quick Mute / Unmute Toggle -->
+                <button
+                    id="ad-mute-btn"
+                    type="button"
+                    aria-label="Unmute Spiffers Ad audio"
+                    class="absolute top-3 right-3 z-10 flex items-center gap-1.5 bg-black/75 hover:bg-white hover:text-black border border-white/25 backdrop-blur-sm px-2.5 py-1 rounded text-xs font-bebas tracking-widest text-gray-200 transition-colors cursor-pointer active:scale-95"
+                >
+                    <svg id="ad-icon-muted" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6"/>
+                    </svg>
+                    <svg id="ad-icon-unmuted" class="hidden w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 5L6 9H2v6h4l5 4V5zM15.54 8.46a5 5 0 010 7.07M19.07 4.93a10 10 0 010 14.14"/>
+                    </svg>
+                    <span id="ad-mute-label">MUTED</span>
+                </button>
+            </div>
         </div>
 
         <!-- Project Details -->
@@ -65,15 +96,15 @@
             <div class="col-span-1 flex flex-col gap-6 font-light">
                 <div>
                     <h3 class="font-bebas text-2xl tracking-widest text-gray-400 mb-2">ROLE</h3>
-                    <p class="text-sm tracking-wider text-gray-200">3D Product Animator, Lighting & Look-Dev</p>
+                    <p class="text-sm tracking-wider text-gray-200">3D Product Animator, Lighting &amp; Poster Design</p>
                 </div>
                 <div>
                     <h3 class="font-bebas text-2xl tracking-widest text-gray-400 mb-2">TOOLS</h3>
                     <p class="text-sm tracking-wider text-gray-200">Blender, Substance Painter, After Effects</p>
                 </div>
                 <div>
-                    <h3 class="font-bebas text-2xl tracking-widest text-gray-400 mb-2">TIMELINE</h3>
-                    <p class="text-sm tracking-wider text-gray-200">2026</p>
+                    <h3 class="font-bebas text-2xl tracking-widest text-gray-400 mb-2">DELIVERABLES</h3>
+                    <p class="text-sm tracking-wider text-gray-200">1 Vertical Ad Video &bull; 2 Social Media Posters</p>
                 </div>
             </div>
 
@@ -81,46 +112,77 @@
             <div class="col-span-1 md:col-span-2">
                 <h3 class="font-bebas text-3xl tracking-widest text-white mb-4">THE CONCEPT</h3>
                 <p class="text-gray-300 font-light tracking-wide leading-relaxed mb-6">
-                    Spiffers Shoes is a sleek 3D product animation designed to showcase footwear craftsmanship through high-contrast studio lighting, sweeping macro camera moves, and snappy commercial pacing.
+                    Spiffers Shoes is a social media product campaign built around a punchy vertical 3D commercial and two companion posters. Designed for mobile-first feeds, the spot highlights suede, leather grain, and silhouette details through sweeping macro camera moves and rhythmic beat-synced reveals.
                 </p>
                 <p class="text-gray-300 font-light tracking-wide leading-relaxed">
-                    Every stitch, mesh weave, and sole texture was shaded for close-up clarity, pairing dynamic reveal choreography with crisp motion design to elevate the product's visual identity.
+                    Alongside the main ad film, two distinct poster directions were rendered to extend the launch across social posts—balancing warm, minimal studio elegance with bold, high-contrast spotlight drama.
                 </p>
             </div>
         </div>
 
-        <!-- Product Renders & Breakdown Grid -->
+        <!-- Social Media Posters Section -->
         <div class="w-full max-w-5xl mt-20">
-            <h3 class="font-bebas text-3xl tracking-widest text-white mb-6">STILLS & BREAKDOWN</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Hero Studio Render -->
-                <div class="aspect-video bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm relative group overflow-hidden flex items-center justify-center">
-                    <p class="font-bebas text-2xl text-[#2a2a2a] tracking-widest group-hover:scale-105 transition-transform duration-500">
-                        HERO STUDIO RENDER
-                    </p>
+            <h3 class="font-bebas text-3xl tracking-widest text-white mb-6">SOCIAL MEDIA POSTERS</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <!-- Poster 01: Minimal Studio Pedestal -->
+                <div class="bg-[#0a0a0a] border border-[#2a2a2a] hover:border-white/30 rounded-sm relative group overflow-hidden flex items-center justify-center transition-colors duration-300">
+                    <img src="./Spiffers1.jpg" alt="Spiffers Shoes Social Poster 01" class="w-full h-auto object-contain group-hover:scale-[1.03] transition-transform duration-700" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                    <p class="hidden py-24 font-bebas text-2xl text-[#2a2a2a] tracking-widest">SOCIAL POSTER 01</p>
+                    <span class="absolute bottom-3 left-3 bg-black/75 border border-white/15 backdrop-blur-sm px-2.5 py-0.5 rounded text-xs font-bebas tracking-widest text-gray-200 pointer-events-none">
+                        POSTER 01 &bull; STUDIO
+                    </span>
                 </div>
-                <!-- Macro Material Detail -->
-                <div class="aspect-video bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm relative group overflow-hidden flex items-center justify-center">
-                    <p class="font-bebas text-2xl text-[#2a2a2a] tracking-widest group-hover:scale-105 transition-transform duration-500">
-                        MATERIAL & TEXTURE CLOSE-UP
-                    </p>
-                </div>
-                <!-- Clay / Wireframe Pass -->
-                <div class="aspect-video bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm relative group overflow-hidden flex items-center justify-center">
-                    <p class="font-bebas text-2xl text-[#2a2a2a] tracking-widest group-hover:scale-105 transition-transform duration-500">
-                        CLAY / WIREFRAME PASS
-                    </p>
-                </div>
-                <!-- Lighting Setup -->
-                <div class="aspect-video bg-[#0a0a0a] border border-[#2a2a2a] rounded-sm relative group overflow-hidden flex items-center justify-center">
-                    <p class="font-bebas text-2xl text-[#2a2a2a] tracking-widest group-hover:scale-105 transition-transform duration-500">
-                        LIGHTING & COMPOSITING
-                    </p>
+
+                <!-- Poster 02: Red Spotlight Key Visual -->
+                <div class="bg-[#0a0a0a] border border-[#2a2a2a] hover:border-white/30 rounded-sm relative group overflow-hidden flex items-center justify-center transition-colors duration-300">
+                    <img src="./Spiffers2.jpg" alt="Spiffers Shoes Social Poster 02" class="w-full h-auto object-contain group-hover:scale-[1.03] transition-transform duration-700" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                    <p class="hidden py-24 font-bebas text-2xl text-[#2a2a2a] tracking-widest">SOCIAL POSTER 02</p>
+                    <span class="absolute bottom-3 left-3 bg-black/75 border border-white/15 backdrop-blur-sm px-2.5 py-0.5 rounded text-xs font-bebas tracking-widest text-gray-200 pointer-events-none">
+                        POSTER 02 &bull; SPOTLIGHT
+                    </span>
                 </div>
             </div>
         </div>
 
     </section>
+
+    <!-- Ad Video Audio Toggle Script -->
+    <script>
+        const adVideo = document.getElementById('spiffers-ad-video');
+        const adMuteBtn = document.getElementById('ad-mute-btn');
+        const adIconMuted = document.getElementById('ad-icon-muted');
+        const adIconUnmuted = document.getElementById('ad-icon-unmuted');
+        const adMuteLabel = document.getElementById('ad-mute-label');
+
+        function syncMuteUI() {
+            if (!adVideo || !adMuteBtn) return;
+            const isMuted = adVideo.muted;
+            adIconMuted.classList.toggle('hidden', !isMuted);
+            adIconUnmuted.classList.toggle('hidden', isMuted);
+            adMuteLabel.textContent = isMuted ? 'MUTED' : 'SOUND ON';
+
+            adMuteBtn.setAttribute('aria-label', `${isMuted ? 'Unmute' : 'Mute'} Spiffers Ad audio`);
+            adMuteBtn.classList.toggle('bg-white', !isMuted);
+            adMuteBtn.classList.toggle('text-black', !isMuted);
+            adMuteBtn.classList.toggle('border-white', !isMuted);
+            adMuteBtn.classList.toggle('bg-black/75', isMuted);
+            adMuteBtn.classList.toggle('text-gray-200', isMuted);
+            adMuteBtn.classList.toggle('border-white/25', isMuted);
+        }
+
+        if (adVideo && adMuteBtn) {
+            adMuteBtn.addEventListener('click', () => {
+                adVideo.muted = !adVideo.muted;
+                if (!adVideo.muted) {
+                    adVideo.play().catch(() => {});
+                }
+                syncMuteUI();
+            });
+
+            // Keep button in sync if the user uses the native video player's volume control
+            adVideo.addEventListener('volumechange', syncMuteUI);
+        }
+    </script>
 
 </body>
 </html>
